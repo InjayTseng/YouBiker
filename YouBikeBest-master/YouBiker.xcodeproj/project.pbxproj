@@ -54,11 +54,6 @@
 		0C48124017415C8D0086BCD5 /* sideBarMenu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C48123F17415C8D0086BCD5 /* sideBarMenu2.png */; };
 		0C48124217415D140086BCD5 /* sideBarMenu3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C48124117415D140086BCD5 /* sideBarMenu3.png */; };
 		0C48124417415D330086BCD5 /* sideBarMenu4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C48124317415D330086BCD5 /* sideBarMenu4.png */; };
-		0C58C65717736D60000C6C5C /* youbike101.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C58C65617736D60000C6C5C /* youbike101.png */; };
-		0C58C65B17736F89000C6C5C /* youbike101w.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C58C65A17736F89000C6C5C /* youbike101w.png */; };
-		0C58C65D17736FE6000C6C5C /* youbike101ww.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C58C65C17736FE6000C6C5C /* youbike101ww.png */; };
-		0C58C65F177371D2000C6C5C /* clock_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C58C65E177371D2000C6C5C /* clock_copy.png */; };
-		0C58C661177373CB000C6C5C /* narrow_w.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C58C660177373CB000C6C5C /* narrow_w.png */; };
 		0C58D60C17524BB10021469D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C58D60B17524BB10021469D /* CoreLocation.framework */; };
 		0C61C4A01743DA74008E58FA /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C61C49F1743DA74008E58FA /* AboutUsViewController.m */; };
 		0C61C4A31743DBA9008E58FA /* SecondContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C61C4A21743DBA9008E58FA /* SecondContentViewController.m */; };
@@ -92,6 +87,8 @@
 		611777F617B14B5C00F512D4 /* trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 611777F517B14B5B00F512D4 /* trees.png */; };
 		611777F817B14BDA00F512D4 /* trees2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 611777F717B14BDA00F512D4 /* trees2.jpg */; };
 		611777FA17B14C4100F512D4 /* road1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 611777F917B14C4100F512D4 /* road1.jpg */; };
+		6143915417B3F6C400AA8C10 /* MapSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6143915317B3F6C400AA8C10 /* MapSiteViewController.m */; };
+		6143915617B402C300AA8C10 /* listIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6143915517B402C300AA8C10 /* listIcon.png */; };
 		F72F3AB81761CDC3007F1AA2 /* ubiker_x_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F72F3AB71761CDC3007F1AA2 /* ubiker_x_57.png */; };
 		F72F3ABA1761CDC5007F1AA2 /* ubiker_x_114.png in Resources */ = {isa = PBXBuildFile; fileRef = F72F3AB91761CDC5007F1AA2 /* ubiker_x_114.png */; };
 		F72F3ABD1761D383007F1AA2 /* StreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F3ABC1761D383007F1AA2 /* StreetViewController.m */; };
@@ -173,11 +170,6 @@
 		0C48123F17415C8D0086BCD5 /* sideBarMenu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideBarMenu2.png; sourceTree = "<group>"; };
 		0C48124117415D140086BCD5 /* sideBarMenu3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideBarMenu3.png; sourceTree = "<group>"; };
 		0C48124317415D330086BCD5 /* sideBarMenu4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideBarMenu4.png; sourceTree = "<group>"; };
-		0C58C65617736D60000C6C5C /* youbike101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youbike101.png; sourceTree = "<group>"; };
-		0C58C65A17736F89000C6C5C /* youbike101w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youbike101w.png; sourceTree = "<group>"; };
-		0C58C65C17736FE6000C6C5C /* youbike101ww.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youbike101ww.png; sourceTree = "<group>"; };
-		0C58C65E177371D2000C6C5C /* clock_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_copy.png; sourceTree = "<group>"; };
-		0C58C660177373CB000C6C5C /* narrow_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = narrow_w.png; sourceTree = "<group>"; };
 		0C58D60B17524BB10021469D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0C61C49E1743DA73008E58FA /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		0C61C49F1743DA74008E58FA /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
@@ -257,6 +249,9 @@
 		611777F517B14B5B00F512D4 /* trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees.png; sourceTree = "<group>"; };
 		611777F717B14BDA00F512D4 /* trees2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trees2.jpg; sourceTree = "<group>"; };
 		611777F917B14C4100F512D4 /* road1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = road1.jpg; sourceTree = "<group>"; };
+		6143915217B3F6C400AA8C10 /* MapSiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSiteViewController.h; sourceTree = "<group>"; };
+		6143915317B3F6C400AA8C10 /* MapSiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSiteViewController.m; sourceTree = "<group>"; };
+		6143915517B402C300AA8C10 /* listIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listIcon.png; sourceTree = "<group>"; };
 		F72F3AB71761CDC3007F1AA2 /* ubiker_x_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ubiker_x_57.png; sourceTree = "<group>"; };
 		F72F3AB91761CDC5007F1AA2 /* ubiker_x_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ubiker_x_114.png; sourceTree = "<group>"; };
 		F72F3ABB1761D383007F1AA2 /* StreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetViewController.h; sourceTree = "<group>"; };
@@ -411,6 +406,7 @@
 		0C1979FF173AB2EE00CD1828 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6143915517B402C300AA8C10 /* listIcon.png */,
 				611777F917B14C4100F512D4 /* road1.jpg */,
 				611777F717B14BDA00F512D4 /* trees2.jpg */,
 				611777F517B14B5B00F512D4 /* trees.png */,
@@ -503,11 +499,8 @@
 			isa = PBXGroup;
 			children = (
 				0CE6F386177214F3008B1803 /* GiveRating */,
-				0C58C660177373CB000C6C5C /* narrow_w.png */,
-				0C58C65E177371D2000C6C5C /* clock_copy.png */,
-				0C58C65C17736FE6000C6C5C /* youbike101ww.png */,
-				0C58C65A17736F89000C6C5C /* youbike101w.png */,
-				0C58C65617736D60000C6C5C /* youbike101.png */,
+				6143915217B3F6C400AA8C10 /* MapSiteViewController.h */,
+				6143915317B3F6C400AA8C10 /* MapSiteViewController.m */,
 				0C4470F5174003DF00F67A53 /* SideMenuViewController.h */,
 				0C4470F6174003E000F67A53 /* SideMenuViewController.m */,
 				0C161480173944E400378523 /* ViewController.h */,
@@ -666,15 +659,11 @@
 				0CE6F3A8177214F3008B1803 /* Appirater.podspec in Resources */,
 				0CE6F3A9177214F3008B1803 /* AppiraterLocalizable.strings in Resources */,
 				0CE6F3AA177214F3008B1803 /* README.md in Resources */,
-				0C58C65717736D60000C6C5C /* youbike101.png in Resources */,
-				0C58C65B17736F89000C6C5C /* youbike101w.png in Resources */,
-				0C58C65D17736FE6000C6C5C /* youbike101ww.png in Resources */,
-				0C58C65F177371D2000C6C5C /* clock_copy.png in Resources */,
-				0C58C661177373CB000C6C5C /* narrow_w.png in Resources */,
 				611777F417B1423400F512D4 /* map2.png in Resources */,
 				611777F617B14B5C00F512D4 /* trees.png in Resources */,
 				611777F817B14BDA00F512D4 /* trees2.jpg in Resources */,
 				611777FA17B14C4100F512D4 /* road1.jpg in Resources */,
+				6143915617B402C300AA8C10 /* listIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +712,7 @@
 				F72F3ABD1761D383007F1AA2 /* StreetViewController.m in Sources */,
 				0CE6F3A7177214F3008B1803 /* Appirater.m in Sources */,
 				0CA4EFDD1773695400ABD48C /* RegistrationViewController.m in Sources */,
+				6143915417B3F6C400AA8C10 /* MapSiteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

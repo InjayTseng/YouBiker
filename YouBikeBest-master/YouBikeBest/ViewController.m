@@ -20,6 +20,8 @@
 #import "SVProgressHUD.h"
 #import "MapViewController.h"
 #import "UIScrollView+APParallaxHeader.h"
+#import "MapSiteViewController.h"
+
 @interface ViewController ()
 
 @property (nonatomic,readwrite) BOOL isShowReload;
@@ -37,25 +39,50 @@
 
    
 
-    MapViewController *svc = [self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
-    UIImage* image3 = [UIImage imageNamed:@"map2.png"];
+
+    UIImage* image3 = [UIImage imageNamed:@"listIcon.png"];
     CGRect frameimg = CGRectMake(100, 100,40, 24);
     
-    UIButton *someButton = [[UIButton alloc] initWithFrame:frameimg];
-    [someButton setBackgroundImage:image3 forState:UIControlStateNormal];
-    [someButton addTarget:self action:@selector(dismissViewControllerAnimated:completion:)
-         forControlEvents:UIControlEventTouchUpInside];
-    [someButton setShowsTouchWhenHighlighted:YES];
+
     
-    UINavigationController * navc = [[UINavigationController alloc]initWithRootViewController:svc];
-    UIBarButtonItem *mailbutton =[[UIBarButtonItem alloc] initWithCustomView:someButton];
-    svc.navigationItem.rightBarButtonItem=mailbutton;
+
+
+    MapSiteViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MapSiteViewController"];
+    
+
+    
+    [vc setSelectBlock: ^(Site* site){
+        
+        DetailViewController *dv = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+        [dv setTitleName:site.name];
+        [dv.lbCanRent setText:site.availBike];
+        [dv.lbCanPark setText:site.capacity];
+        [dv setCurrentSite:site];
+        [dv goLocation:[site.lat doubleValue] andLon:[site.lng doubleValue] withName:site.name];
+        [self.navigationController pushViewController:dv animated:YES];
+    
+    }];
+    
+    UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:vc];
+    
     
     [navc setModalPresentationStyle:UIModalPresentationFullScreen];
-    [navc setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
-    [self.navigationController presentViewController:navc animated:YES completion:^{
-       
-    }];
+    
+    [navc setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    
+
+    UIButton *someButton = [[UIButton alloc] initWithFrame:frameimg];
+    [someButton setBackgroundImage:image3 forState:UIControlStateNormal];
+    [someButton addTarget:vc action:@selector(dismissModalViewControllerAnimated:)
+         forControlEvents:UIControlEventTouchUpInside];
+    [someButton setShowsTouchWhenHighlighted:YES];
+    UIBarButtonItem *mailbutton =[[UIBarButtonItem alloc] initWithCustomView:someButton];
+    [vc.navigationItem setRightBarButtonItem:mailbutton];
+
+    [self presentViewController:navc animated:YES completion:nil];
+    
+    
+
     
 }
 
@@ -63,6 +90,7 @@
 {
     
     [super viewDidLoad];
+    
     
     UIImage* image3 = [UIImage imageNamed:@"map2.png"];
     CGRect frameimg = CGRectMake(100, 100,40, 24);
